@@ -39,8 +39,13 @@
   src: url(./fonts/Speedee/Speedee_Lt.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Speedee Italic";
+  src: url(./fonts/Speedee/Speedee_It.ttf) format("truetype");
+}
+
 :root {
-  font-size: clamp(1rem, calc(1rem + ((1vw - 0.234375rem) * 0.5178)), 1.5rem);
+  font-size: clamp(1rem, calc(1rem + ((1vw - 0.234375rem) * 0.5178)), 1.2rem);
   min-height: 0vw;
 }
 
@@ -62,7 +67,7 @@ a:active {
 }
 
 .navbar {
-  width: 100vw;
+  width: 100%;
   height: 60px;
   -webkit-box-shadow: 0px 3px 13px -3px rgba(0, 0, 0, 0.18);
   box-shadow: 0px 3px 13px -3px rgba(0, 0, 0, 0.18);
@@ -121,7 +126,7 @@ a:active {
 }
 
 .navbar__menu--desktop a svg {
-  color: #2c5234;
+  color: #1d5030;
 }
 
 .navbar__menu--mobile {
@@ -144,11 +149,11 @@ a:active {
       -ms-flex-pack: center;
           justify-content: center;
   top: 60px;
-  height: 250px;
+  height: 300px;
   display: none;
   -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  color: #2c5234;
+  color: #1d5030;
 }
 
 .navbar__menu--mobile a {
@@ -173,5 +178,174 @@ a:active {
   width: 100vw;
   background-color: transparent;
   display: none;
+}
+
+.intro {
+  height: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-inline: auto;
+}
+
+.intro svg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 500px;
+  min-width: 340px;
+  max-width: 850px;
+}
+
+.intro__logo {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
+}
+
+.intro__logo img {
+  height: 200px;
+}
+
+.intro__logo h2 {
+  color: white;
+  font-size: 25px;
+  font-family: "Speedee Light";
+  letter-spacing: 2.5px;
+}
+
+.quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-inline: 10px;
+  min-width: 340px;
+  max-width: 850px;
+  margin-inline: auto;
+  margin-top: 20px;
+}
+
+.quote img {
+  height: 140px;
+  border-radius: 50%;
+  margin-inline: 15px;
+}
+
+.quote blockquote {
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+  font-family: "Speedee Italic";
+  line-height: 32px;
+}
+
+.quote blockquote span {
+  font-size: 2rem;
+}
+
+.quote blockquote .raykrok {
+  font-size: 1.4rem;
+  font-family: "Speedee Bold";
+  color: rgba(15, 15, 15, 0.905);
+  color: #1d5030;
+}
+
+hr {
+  margin-top: 30px;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  min-width: 340px;
+  max-width: 850px;
+  margin-inline: auto;
+}
+
+.text {
+  min-width: 340px;
+  max-width: 850px;
+  margin-inline: auto;
+}
+
+.text svg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  margin-top: 380px;
+  min-width: 340px;
+  max-width: 850px;
+}
+
+.text p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  margin-inline: 20px;
+}
+
+.text p strong {
+  color: #1d5030;
+}
+
+.text .flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 340px;
+  max-width: 850px;
+}
+
+.text .flexbox .hamburger {
+  height: 180px;
+  width: 180px;
+  opacity: 95%;
+}
+
+.text .flexbox .cuarto {
+  background-image: url(./images/pictocuartolibradequeso.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background-position: center;
+}
+
+.text .flexbox .patatas {
+  background-image: url(./images/pictopatatasfritas.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  background-position: center;
+}
+
+@media screen and (min-width: 445px) {
+  .text svg {
+    margin-top: 300px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

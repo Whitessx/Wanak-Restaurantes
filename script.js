@@ -15,10 +15,6 @@ BOTON.addEventListener("click", function() {
 });
 
 HIDE.addEventListener("click", function() {
-  if (MENU.style.display == "flex") {
     MENU.style.display = "none";
     HIDE.style.display = "none";
-  } else {
-    return;
-  }
 });

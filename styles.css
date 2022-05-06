@@ -250,18 +250,18 @@ a:active {
 .quote img {
   height: 140px;
   border-radius: 50%;
-  margin-inline: 15px;
+  margin-inline: 10px;
 }
 
 .quote blockquote {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   letter-spacing: 1.2px;
   font-family: "Speedee Italic";
   line-height: 32px;
 }
 
 .quote blockquote span {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .quote blockquote .raykrok {

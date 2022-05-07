@@ -88,7 +88,7 @@ a:active {
   width: 100%;
   height: 100%;
   min-width: 340px;
-  max-width: 850px;
+  max-width: 750px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +198,7 @@ a:active {
   width: 100%;
   height: 500px;
   min-width: 340px;
-  max-width: 850px;
+  max-width: 750px;
 }
 
 .intro__logo {
@@ -242,7 +242,7 @@ a:active {
           justify-content: center;
   padding-inline: 10px;
   min-width: 340px;
-  max-width: 850px;
+  max-width: 750px;
   margin-inline: auto;
   margin-top: 20px;
 }
@@ -278,23 +278,14 @@ hr {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   min-width: 340px;
-  max-width: 850px;
+  max-width: 750px;
   margin-inline: auto;
 }
 
 .text {
   min-width: 340px;
-  max-width: 850px;
+  max-width: 750px;
   margin-inline: auto;
-}
-
-.text svg {
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-  margin-top: 380px;
-  min-width: 340px;
-  max-width: 850px;
 }
 
 .text p {
@@ -316,7 +307,7 @@ hr {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-width: 340px;
-  max-width: 850px;
+  max-width: 750px;
 }
 
 .text .flexbox .hamburger {
@@ -343,9 +334,33 @@ hr {
   background-position: center;
 }
 
-@media screen and (min-width: 445px) {
-  .text svg {
-    margin-top: 300px;
-  }
+footer {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+footer svg {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  min-width: 340px;
+  max-width: 750px;
+  margin-top: 40px;
+}
+
+footer .copyright {
+  color: #1d5030;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

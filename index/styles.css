@@ -338,6 +338,8 @@ hr {
   height: 150px;
   width: 150px;
   opacity: 95%;
+  position: relative;
+  z-index: -1;
 }
 
 .text .flexbox .cuarto {

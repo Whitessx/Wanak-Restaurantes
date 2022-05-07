@@ -274,6 +274,7 @@
    min-width: $min-width;
    max-width: $max-width;
    margin-inline: auto;
+   margin-bottom: 180px;
    
 
    p {
@@ -327,17 +328,38 @@
    position: relative;
    z-index: 1;
 
-  svg {
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-    min-width: $min-width;
-    max-width: $max-width;
-    margin-top: 40px;
-  }
+  // svg {
+  //   position: absolute;
+  //   width: 100%;
+  //   z-index: 0;
+  //   min-width: $min-width;
+  //   max-width: $max-width;
+  //   margin-top: 40px;
+  // }
 
   .copyright {
     color: $green;
     text-align: center;
   }
+ }
+
+ // Bottom SVG 
+
+ body {
+   position: relative;
+   width: 100%;
+
+   .svg {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     z-index: -1;
+    
+     svg {
+       max-width: $max-width;
+       min-width: $min-width;
+     }
+   }
  }

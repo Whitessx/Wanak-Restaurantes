@@ -33,7 +33,7 @@
  $green: #1d5030;
 
  //Min and Max width Variables
- $min-width: 340px;
+ $min-width: 300px;
  $max-width: 750px;
 
  // Font import.
@@ -320,22 +320,12 @@
  }
 
  footer {
-   width: 100%;
    height: 40px;
    display: flex;
    align-items: center;
    justify-content: center;
    position: relative;
    z-index: 1;
-
-  // svg {
-  //   position: absolute;
-  //   width: 100%;
-  //   z-index: 0;
-  //   min-width: $min-width;
-  //   max-width: $max-width;
-  //   margin-top: 40px;
-  // }
 
   .copyright {
     color: $green;
@@ -348,6 +338,9 @@
  body {
    position: relative;
    width: 100%;
+   height: 100%;
+   overflow-y: scroll;
+   overflow-x: hidden;
 
    .svg {
      position: absolute;

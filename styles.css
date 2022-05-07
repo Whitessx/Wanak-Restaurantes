@@ -87,7 +87,7 @@ a:active {
 .navbar .navbar__container {
   width: 100%;
   height: 100%;
-  min-width: 340px;
+  min-width: 300px;
   max-width: 750px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,7 +197,7 @@ a:active {
   z-index: -1;
   width: 100%;
   height: 500px;
-  min-width: 340px;
+  min-width: 300px;
   max-width: 750px;
 }
 
@@ -241,7 +241,7 @@ a:active {
       -ms-flex-pack: center;
           justify-content: center;
   padding-inline: 10px;
-  min-width: 340px;
+  min-width: 300px;
   max-width: 750px;
   margin-inline: auto;
   margin-top: 20px;
@@ -277,13 +277,13 @@ hr {
   height: 1px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  min-width: 340px;
+  min-width: 300px;
   max-width: 750px;
   margin-inline: auto;
 }
 
 .text {
-  min-width: 340px;
+  min-width: 300px;
   max-width: 750px;
   margin-inline: auto;
   margin-bottom: 180px;
@@ -307,7 +307,7 @@ hr {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  min-width: 340px;
+  min-width: 300px;
   max-width: 750px;
 }
 
@@ -336,7 +336,6 @@ hr {
 }
 
 footer {
-  width: 100%;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,6 +358,9 @@ footer .copyright {
 body {
   position: relative;
   width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body .svg {
@@ -376,6 +378,6 @@ body .svg {
 
 body .svg svg {
   max-width: 750px;
-  min-width: 340px;
+  min-width: 300px;
 }
 /*# sourceMappingURL=styles.css.map */

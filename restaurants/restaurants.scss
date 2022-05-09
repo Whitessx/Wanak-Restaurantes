@@ -168,7 +168,7 @@ a:active {
   }
 }
 
-// Transparent wall 
+// Transparent wall for navbar menu
 
 .transparent {
   position: fixed;
@@ -184,6 +184,7 @@ a:active {
 
 body {
   position: relative;
+  
 
   .top_svg {
     position: absolute;
@@ -199,13 +200,13 @@ body {
   }
 }
 
-//Transparent div
+// Transparent div for maps
 .transparent_restaurant {
   position: fixed;
   z-index: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgb(21, 21, 21);
+  background-color: transparent;
   opacity: 60%;
   display: none;
 }
@@ -215,72 +216,199 @@ body {
 .restaurants {
   width: 100%;
   margin-top: 50px;
-  
-  .restaurants__flex-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 350px;
+  margin-bottom: 230px;
+
+  .restaurants__card__gamarra {
+    width: 330px;
+    height: 450px;
     margin-inline: auto;
+    -webkit-box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.133);
+    box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.145);
+    margin-top: 20px;
+
+    .restaurants__card__paragraph {
+      margin-top: 5px;
+      color: $green;
+
+    }
 
     p {
-      margin-block: 10px;
       max-width: $max-width;
       font-size: 1.1rem;
-      
-  
-      span {
-        color: $yellow;
-        font-size: 1rem;
-        font-weight: bold;
-      }
+      text-align: center;
+      font-size: 2rem;
+      color: rgb(0, 0, 0);
+      height: 30px;
+      opacity: 90%;
     }
-    button {
-      font-size: 1.1rem;
-      color: #000000;
-      display: inline-block;
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
 
-      span {
-        color: $yellow;
-      }
+    iframe {
+      display: block;
+      margin-inline: auto;
+      display: none;
+      position: relative;
+      z-index: 1;
     }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9rem;
+      color: #00000099;
+      border: none;
+      cursor: pointer;
+      height: 80px;
+      width: 330px;
+      background-color: #ffb71cc5;
+      margin-top: 11px;
+
+      img {
+        height: 43px;
+        margin-right: 10px;
+      }
+
+    }
+
   }
 
+  .restaurants__card__armentia {
+    width: 330px;
+    height: 450px;
+    margin-inline: auto;
+    -webkit-box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.133);
+    box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.145);
+    margin-top: 40px;
+
+    .restaurants__card__paragraph {
+      margin-top: 5px;
+      color: $green;
+
+    }
+
+    p {
+      max-width: $max-width;
+      font-size: 1.1rem;
+      text-align: center;
+      font-size: 2rem;
+      color: rgb(0, 0, 0);
+      height: 30px;
+      opacity: 90%;
+    }
+
+    iframe {
+      display: block;
+      margin-inline: auto;
+      display: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9rem;
+      color: #00000099;
+      border: none;
+      cursor: pointer;
+      height: 80px;
+      width: 330px;
+      background-color: #ffb71cc5;
+      margin-top: 11px;
+
+      img {
+        height: 43px;
+        margin-right: 10px;
+      }
+
+    }
+
+  }
+
+  .restaurants__card__gorbeia {
+    width: 330px;
+    height: 450px;
+    margin-inline: auto;
+    -webkit-box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.133);
+    box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.145);
+    margin-top: 40px;
+
+    .restaurants__card__paragraph {
+      margin-top: 5px;
+      color: $green;
+
+    }
+
+    p {
+      max-width: $max-width;
+      font-size: 1.1rem;
+      text-align: center;
+      font-size: 2rem;
+      color: rgb(0, 0, 0);
+      height: 30px;
+      opacity: 90%;
+    }
+
+    iframe {
+      display: block;
+      margin-inline: auto;
+      display: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9rem;
+      color: #00000099;
+      border: none;
+      cursor: pointer;
+      height: 80px;
+      width: 330px;
+      background-color: #ffb71cc5;
+      margin-top: 11px;
+
+      img {
+        height: 43px;
+        margin-right: 10px;
+      }
+
+    }
+
+  }
+
+
   h2 {
-    color: $green;
     margin-left: 15px;
     max-width: $max-width;
     margin-inline: auto;
     padding-left: 10px;
     font-size: 1.6rem;
+    color: $green;
   }
 
-  
-  iframe {
-    display: block;
-    margin-inline: auto;
-    display: none;
-    position: relative;
-    z-index: 1;
-  }
 
-  &__gamarra {
+
+
+  &__card__grid--gamarra {
     width: 100%;
     display: grid;
     justify-content: center;
-    gap: 10px;
-    grid-template-columns: 75px 75px 75px 75px;
-    grid-template-rows: 75px 75px 75px 75px;
+    grid-template-columns: 83px 83px 83px 81px;
+    grid-template-rows: 83px 83px 83px 60px;
+    row-gap: 5px;
+    position: relative;
+    z-index: -1;
 
     picture {
       grid-row-start: 1;
       grid-row-end: 4;
       grid-column-start: 1;
       grid-column-end: 5;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      // box-shadow: rgba(0, 0, 0, 0.093) 0px 3px 6px, rgba(0, 0, 0, 0.11) 0px 3px 6px;
 
       img {
         object-fit: cover;
@@ -290,13 +418,82 @@ body {
     }
 
     img {
-      object-fit: cover;
+      object-fit: contain;
       width: 100%;
       height: 100%;
       grid-row-start: 4;
+      opacity: 93%;
+    }
+  }
+
+  &__card__grid--armentia {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 83px 83px 83px 81px;
+    grid-template-rows: 83px 83px 83px 60px;
+    row-gap: 5px;
+    position: relative;
+    z-index: -1;
+
+    picture {
+      grid-row-start: 1;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 5;
+      // box-shadow: rgba(0, 0, 0, 0.093) 0px 3px 6px, rgba(0, 0, 0, 0.11) 0px 3px 6px;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      grid-row-start: 4;
+      opacity: 93%;
+    }
+  }
+
+  &__card__grid--gorbeia {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 83px 83px 83px 81px;
+    grid-template-rows: 83px 83px 83px 60px;
+    row-gap: 5px;
+    position: relative;
+    z-index: -1;
+
+    picture {
+      grid-row-start: 1;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 5;
+      // box-shadow: rgba(0, 0, 0, 0.093) 0px 3px 6px, rgba(0, 0, 0, 0.11) 0px 3px 6px;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      grid-row-start: 4;
+      opacity: 93%;
     }
   }
 }
+
+
 
 // introduction
 
@@ -327,4 +524,40 @@ hr {
   min-width: $min-width;
   max-width: $max-width;
   margin-inline: auto;
+}
+
+// Footer
+
+footer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+
+ .copyright {
+   color: $green;
+   text-align: center;
+ }
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  .svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+   
+    svg {
+      max-width: $max-width;
+      min-width: $min-width;
+    }
+  }
 }

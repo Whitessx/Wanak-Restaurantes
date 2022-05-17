@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./employees.css">
   <link rel="stylesheet" href="./employees-md.css" media="screen and (min-width: 576px)">
   <link rel="stylesheet" href="./employees-lg.css" media="screen and (min-width: 992px)">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
   <link rel="shortcut icon" href="../images/mcdonald's.png" type="image/x-icon">
   <title>Wanak Restaurantes</title>
 </head>
@@ -71,7 +72,11 @@
   <div class="transparent"></div>
   <!-- top svg -->
   <div class="svg">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" viewBox="0 0 900 600" width="900" height="600" version="1.1" preserveAspectRatio="none"><path d="M0 233L25 241.2C50 249.3 100 265.7 150 274.7C200 283.7 250 285.3 300 272.2C350 259 400 231 450 221.8C500 212.7 550 222.3 600 235.5C650 248.7 700 265.3 750 271.2C800 277 850 272 875 269.5L900 267L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z" fill="#ffb81c" stroke-linecap="round" stroke-linejoin="miter"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" viewBox="0 0 900 600"
+      width="900" height="630" version="1.1" preserveAspectRatio="none">
+      <path
+        d="M0 233L25 241.2C50 249.3 100 265.7 150 274.7C200 283.7 250 285.3 300 272.2C350 259 400 231 450 221.8C500 212.7 550 222.3 600 235.5C650 248.7 700 265.3 750 271.2C800 277 850 272 875 269.5L900 267L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z"
+        fill="#ffb81c" stroke-linecap="round" stroke-linejoin="miter" /></svg>
   </div>
   <!--  Main content -->
   <section class="introduction">
@@ -81,7 +86,19 @@
       <img src="../images/employees/workplace.jpg" alt="Workplace">
     </picture>
   </section>
+  
+    <div class="player">
+      <video id="player" playsinline controls data-poster="../images/employees/fondorestaurante.jpg">
+        <source src="../images/employees/video-workplace.mp4" type="video/mp4" />
+      </video>
+    </div>
+  
+
   <script src="../script.js"></script>
+  <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+  <script>
+    const player = new Plyr('#player');
+  </script>
 </body>
 
 </html>

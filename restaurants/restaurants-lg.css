@@ -1,0 +1,66 @@
+.restaurants__grid--desktop {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (330px)[2];
+      grid-template-columns: repeat(2, 330px);
+  -ms-grid-rows: 490px;
+      grid-template-rows: 490px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.restaurants__card__gamarra {
+  margin-top: 20px;
+  width: 330px;
+  height: 450px;
+}
+
+.restaurants__card__armentia {
+  width: 330px;
+  height: 450px;
+  margin-top: 20px;
+}
+
+.restaurants__card__gorbeia {
+  width: 330px;
+  height: 450px;
+  margin-top: 20px;
+}
+
+.restaurants__card__grid--gamarra {
+  -ms-grid-columns: 83px 83px 83px 83px;
+      grid-template-columns: 83px 83px 83px 83px;
+  -ms-grid-rows: 83px 83px 83px 60px;
+      grid-template-rows: 83px 83px 83px 60px;
+}
+
+.restaurants button {
+  width: 330px;
+}
+
+.restaurants iframe {
+  width: 330px;
+  height: 324px;
+}
+
+.restaurants__card__grid--armentia {
+  -ms-grid-columns: 83px 83px 83px 83px;
+      grid-template-columns: 83px 83px 83px 83px;
+  -ms-grid-rows: 83px 83px 83px 60px;
+      grid-template-rows: 83px 83px 83px 60px;
+}
+
+.restaurants__card__grid--gorbeia {
+  -ms-grid-columns: 83px 83px 83px 83px;
+      grid-template-columns: 83px 83px 83px 83px;
+  -ms-grid-rows: 83px 83px 83px 60px;
+      grid-template-rows: 83px 83px 83px 60px;
+}
+
+.restaurants h2 {
+  max-width: 750px;
+}
+/*# sourceMappingURL=restaurants-lg.css.map */

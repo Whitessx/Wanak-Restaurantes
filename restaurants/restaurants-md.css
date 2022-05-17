@@ -1,0 +1,114 @@
+.navbar {
+  height: 70px;
+}
+
+.navbar__container {
+  max-width: 950px;
+}
+
+.navbar__container__button {
+  display: none;
+}
+
+.navbar__menu--desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.navbar__menu--desktop a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  color: #1d5030;
+  margin-inline: 10px;
+  font-size: 15px;
+}
+
+.navbar__logo img {
+  height: 50px;
+}
+
+hr {
+  display: none;
+}
+
+.restaurants__card__gamarra {
+  width: 400px;
+  height: 489px;
+}
+
+.restaurants__card__gamarra__services {
+  -ms-grid-columns: 106px 106px 106px 82px;
+      grid-template-columns: 106px 106px 106px 82px;
+  -ms-grid-rows: 104px 104px 91px;
+      grid-template-rows: 104px 104px 91px;
+}
+
+.restaurants__card__grid--gamarra {
+  -ms-grid-columns: 106px 106px 106px 82px;
+      grid-template-columns: 106px 106px 106px 82px;
+  -ms-grid-rows: 96px 96px 96px 60px;
+      grid-template-rows: 96px 96px 96px 60px;
+}
+
+.restaurants button {
+  width: 400px;
+}
+
+.restaurants iframe {
+  width: 400px;
+  height: 363px;
+}
+
+.restaurants__card__armentia {
+  width: 400px;
+  height: 489px;
+}
+
+.restaurants__card__armentia__services {
+  -ms-grid-columns: 106px 106px 106px 82px;
+      grid-template-columns: 106px 106px 106px 82px;
+  -ms-grid-rows: 104px 104px 91px;
+      grid-template-rows: 104px 104px 91px;
+}
+
+.restaurants__card__grid--armentia {
+  -ms-grid-columns: 106px 106px 106px 82px;
+      grid-template-columns: 106px 106px 106px 82px;
+  -ms-grid-rows: 96px 96px 96px 60px;
+      grid-template-rows: 96px 96px 96px 60px;
+}
+
+.restaurants__card__gorbeia {
+  width: 400px;
+  height: 489px;
+}
+
+.restaurants__card__gorbeia__services {
+  -ms-grid-columns: 106px 106px 106px 82px;
+      grid-template-columns: 106px 106px 106px 82px;
+  -ms-grid-rows: 104px 104px 91px;
+      grid-template-rows: 104px 104px 91px;
+}
+
+.restaurants__card__grid--gorbeia {
+  -ms-grid-columns: 106px 106px 106px 82px;
+      grid-template-columns: 106px 106px 106px 82px;
+  -ms-grid-rows: 96px 96px 96px 60px;
+      grid-template-rows: 96px 96px 96px 60px;
+}
+/*# sourceMappingURL=restaurants-md.css.map */

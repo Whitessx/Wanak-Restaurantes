@@ -82,14 +82,14 @@ a:active {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  z-index: 1;
+  z-index: 4;
 }
 
 .navbar__container {
   width: 100%;
   height: 100%;
   min-width: 300px;
-  max-width: 400px;
+  max-width: 750px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,7 +171,7 @@ a:active {
 
 .transparent {
   position: fixed;
-  z-index: 0;
+  z-index: 3;
   height: 100vh;
   width: 100vw;
   background-color: #151515;
@@ -197,16 +197,15 @@ body .top_svg {
 
 body .top_svg svg {
   width: 100%;
-  max-width: 768px;
+  max-width: 750px;
 }
 
 .transparent_restaurant {
   position: fixed;
-  z-index: 0;
+  z-index: 3;
   height: 100vh;
   width: 100vw;
   background-color: transparent;
-  opacity: 60%;
   display: none;
 }
 
@@ -216,22 +215,47 @@ body .top_svg svg {
   margin-bottom: 230px;
 }
 
-.restaurants .restaurants__card__gamarra {
+.restaurants__card__gamarra {
   width: 330px;
   height: 450px;
   margin-inline: auto;
   -webkit-box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.133);
   box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.145);
   margin-top: 20px;
+  position: relative;
 }
 
-.restaurants .restaurants__card__gamarra .restaurants__card__paragraph {
+.restaurants__card__gamarra__city {
+  position: absolute;
+  z-index: 2;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #1d5030;
+  font-size: 20px;
+}
+
+.restaurants__card__gamarra__services {
+  display: none;
+  background: white;
+  -ms-grid-columns: 83px 83px 83px 81px;
+      grid-template-columns: 83px 83px 83px 81px;
+  -ms-grid-rows: 84px 84px 91px;
+      grid-template-rows: 84px 84px 91px;
+  position: absolute;
+  z-index: 2;
+}
+
+.restaurants__card__gamarra__services img {
+  width: 100%;
+}
+
+.restaurants__card__gamarra .restaurants__card__paragraph {
   margin-top: 5px;
   color: #1d5030;
 }
 
-.restaurants .restaurants__card__gamarra p {
-  max-width: 400px;
+.restaurants__card__gamarra p {
+  max-width: 750px;
   font-size: 1.1rem;
   text-align: center;
   font-size: 2rem;
@@ -240,15 +264,15 @@ body .top_svg svg {
   opacity: 90%;
 }
 
-.restaurants .restaurants__card__gamarra iframe {
+.restaurants__card__gamarra iframe {
   display: block;
   margin-inline: auto;
   display: none;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
-.restaurants .restaurants__card__gamarra button {
+.restaurants__card__gamarra button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,12 +292,12 @@ body .top_svg svg {
   margin-top: 11px;
 }
 
-.restaurants .restaurants__card__gamarra button img {
+.restaurants__card__gamarra button img {
   height: 43px;
   margin-right: 10px;
 }
 
-.restaurants .restaurants__card__armentia {
+.restaurants__card__armentia {
   width: 330px;
   height: 450px;
   margin-inline: auto;
@@ -282,13 +306,37 @@ body .top_svg svg {
   margin-top: 40px;
 }
 
-.restaurants .restaurants__card__armentia .restaurants__card__paragraph {
+.restaurants__card__armentia__city {
+  position: absolute;
+  z-index: 2;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #1d5030;
+  font-size: 20px;
+}
+
+.restaurants__card__armentia__services {
+  display: none;
+  background: white;
+  -ms-grid-columns: 83px 83px 83px 81px;
+      grid-template-columns: 83px 83px 83px 81px;
+  -ms-grid-rows: 84px 84px 91px;
+      grid-template-rows: 84px 84px 91px;
+  position: absolute;
+  z-index: 2;
+}
+
+.restaurants__card__armentia__services img {
+  width: 100%;
+}
+
+.restaurants__card__armentia .restaurants__card__paragraph {
   margin-top: 5px;
   color: #1d5030;
 }
 
-.restaurants .restaurants__card__armentia p {
-  max-width: 400px;
+.restaurants__card__armentia p {
+  max-width: 750px;
   font-size: 1.1rem;
   text-align: center;
   font-size: 2rem;
@@ -297,15 +345,15 @@ body .top_svg svg {
   opacity: 90%;
 }
 
-.restaurants .restaurants__card__armentia iframe {
+.restaurants__card__armentia iframe {
   display: block;
   margin-inline: auto;
   display: none;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
-.restaurants .restaurants__card__armentia button {
+.restaurants__card__armentia button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,12 +373,12 @@ body .top_svg svg {
   margin-top: 11px;
 }
 
-.restaurants .restaurants__card__armentia button img {
+.restaurants__card__armentia button img {
   height: 43px;
   margin-right: 10px;
 }
 
-.restaurants .restaurants__card__gorbeia {
+.restaurants__card__gorbeia {
   width: 330px;
   height: 450px;
   margin-inline: auto;
@@ -339,13 +387,37 @@ body .top_svg svg {
   margin-top: 40px;
 }
 
-.restaurants .restaurants__card__gorbeia .restaurants__card__paragraph {
+.restaurants__card__gorbeia__city {
+  position: absolute;
+  z-index: 2;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #1d5030;
+  font-size: 20px;
+}
+
+.restaurants__card__gorbeia__services {
+  display: none;
+  background: white;
+  -ms-grid-columns: 83px 83px 83px 81px;
+      grid-template-columns: 83px 83px 83px 81px;
+  -ms-grid-rows: 84px 84px 91px;
+      grid-template-rows: 84px 84px 91px;
+  position: absolute;
+  z-index: 2;
+}
+
+.restaurants__card__gorbeia__services img {
+  width: 100%;
+}
+
+.restaurants__card__gorbeia .restaurants__card__paragraph {
   margin-top: 5px;
   color: #1d5030;
 }
 
-.restaurants .restaurants__card__gorbeia p {
-  max-width: 400px;
+.restaurants__card__gorbeia p {
+  max-width: 750px;
   font-size: 1.1rem;
   text-align: center;
   font-size: 2rem;
@@ -354,15 +426,15 @@ body .top_svg svg {
   opacity: 90%;
 }
 
-.restaurants .restaurants__card__gorbeia iframe {
+.restaurants__card__gorbeia iframe {
   display: block;
   margin-inline: auto;
   display: none;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
-.restaurants .restaurants__card__gorbeia button {
+.restaurants__card__gorbeia button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,18 +454,9 @@ body .top_svg svg {
   margin-top: 11px;
 }
 
-.restaurants .restaurants__card__gorbeia button img {
+.restaurants__card__gorbeia button img {
   height: 43px;
   margin-right: 10px;
-}
-
-.restaurants h2 {
-  margin-left: 15px;
-  max-width: 400px;
-  margin-inline: auto;
-  padding-left: 10px;
-  font-size: 1.6rem;
-  color: #1d5030;
 }
 
 .restaurants__card__grid--gamarra {
@@ -403,13 +466,13 @@ body .top_svg svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: 83px 83px 83px 81px;
-      grid-template-columns: 83px 83px 83px 81px;
+  -ms-grid-columns: 81px 83px 83px 83px;
+      grid-template-columns: 81px 83px 83px 83px;
   -ms-grid-rows: 83px 83px 83px 60px;
       grid-template-rows: 83px 83px 83px 60px;
   row-gap: 5px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .restaurants__card__grid--gamarra picture {
@@ -435,7 +498,7 @@ body .top_svg svg {
   height: 100%;
   -ms-grid-row: 4;
       grid-row-start: 4;
-  opacity: 93%;
+  opacity: 96%;
 }
 
 .restaurants__card__grid--armentia {
@@ -445,13 +508,13 @@ body .top_svg svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: 83px 83px 83px 81px;
-      grid-template-columns: 83px 83px 83px 81px;
+  -ms-grid-columns: 81px 83px 83px 83px;
+      grid-template-columns: 81px 83px 83px 83px;
   -ms-grid-rows: 83px 83px 83px 60px;
       grid-template-rows: 83px 83px 83px 60px;
   row-gap: 5px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .restaurants__card__grid--armentia picture {
@@ -477,7 +540,7 @@ body .top_svg svg {
   height: 100%;
   -ms-grid-row: 4;
       grid-row-start: 4;
-  opacity: 93%;
+  opacity: 96%;
 }
 
 .restaurants__card__grid--gorbeia {
@@ -487,13 +550,13 @@ body .top_svg svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: 83px 83px 83px 81px;
-      grid-template-columns: 83px 83px 83px 81px;
+  -ms-grid-columns: 81px 83px 83px 81px;
+      grid-template-columns: 81px 83px 83px 81px;
   -ms-grid-rows: 83px 83px 83px 60px;
       grid-template-rows: 83px 83px 83px 60px;
   row-gap: 5px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .restaurants__card__grid--gorbeia picture {
@@ -519,7 +582,7 @@ body .top_svg svg {
   height: 100%;
   -ms-grid-row: 4;
       grid-row-start: 4;
-  opacity: 93%;
+  opacity: 96%;
 }
 
 .introduction {
@@ -555,7 +618,7 @@ hr {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   min-width: 300px;
-  max-width: 400px;
+  max-width: 750px;
   margin-inline: auto;
 }
 
@@ -599,7 +662,19 @@ body .svg {
 }
 
 body .svg svg {
-  max-width: 400px;
+  max-width: 768px;
   min-width: 300px;
+}
+
+.magnify_gamarra {
+  cursor: pointer;
+}
+
+.magnify_armentia {
+  cursor: pointer;
+}
+
+.magnify_gorbeia {
+  cursor: pointer;
 }
 /*# sourceMappingURL=restaurants.css.map */

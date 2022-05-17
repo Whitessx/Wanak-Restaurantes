@@ -32,7 +32,7 @@ $green: #1d5030;
 
 //Min and Max width Variables
 $min-width: 300px;
-$max-width: 400px;
+$max-width: 750px;
 
 // Font import.
 @font-face {
@@ -91,7 +91,7 @@ a:active {
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 1;
+  z-index: 4;
 
 
   &__container {
@@ -172,7 +172,7 @@ a:active {
 
 .transparent {
   position: fixed;
-  z-index: 0;
+  z-index: 3;
   height: 100vh;
   width: 100vw;
   background-color: rgb(21, 21, 21);
@@ -195,7 +195,7 @@ body {
 
     svg {
       width: 100%;
-      max-width: 768px;
+      max-width: $max-width;
     }
   }
 }
@@ -203,11 +203,10 @@ body {
 // Transparent div for maps
 .transparent_restaurant {
   position: fixed;
-  z-index: 0;
+  z-index: 3;
   height: 100vh;
   width: 100vw;
   background-color: transparent;
-  opacity: 60%;
   display: none;
 }
 
@@ -218,13 +217,38 @@ body {
   margin-top: 50px;
   margin-bottom: 230px;
 
-  .restaurants__card__gamarra {
+  &__card__gamarra {
     width: 330px;
     height: 450px;
     margin-inline: auto;
     -webkit-box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.133);
     box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.145);
     margin-top: 20px;
+    position: relative;
+
+    &__city {
+      position: absolute;
+      z-index: 2;
+      margin-top: 5px;
+      margin-left: 5px;
+      color: $green;
+      font-size: 20px;
+    }
+
+    &__services {
+      display: none;
+      background: white;
+      grid-template-columns: 83px 83px 83px 81px;
+      grid-template-rows: 84px 84px 91px;
+      position: absolute;
+      z-index: 2;
+      
+
+      img {
+        width: 100%;
+        
+      }
+    }
 
     .restaurants__card__paragraph {
       margin-top: 5px;
@@ -247,7 +271,7 @@ body {
       margin-inline: auto;
       display: none;
       position: relative;
-      z-index: 1;
+      z-index: 3;
     }
 
     button {
@@ -272,7 +296,7 @@ body {
 
   }
 
-  .restaurants__card__armentia {
+  &__card__armentia {
     width: 330px;
     height: 450px;
     margin-inline: auto;
@@ -280,6 +304,30 @@ body {
     box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.145);
     margin-top: 40px;
 
+    &__city {
+      position: absolute;
+      z-index: 2;
+      margin-top: 5px;
+      margin-left: 5px;
+      color: $green;
+      font-size: 20px;
+    }
+
+    &__services {
+      display: none;
+      background: white;
+      grid-template-columns: 83px 83px 83px 81px;
+      grid-template-rows: 84px 84px 91px;
+      position: absolute;
+      z-index: 2;
+      
+
+      img {
+        width: 100%;
+        
+      }
+    } 
+
     .restaurants__card__paragraph {
       margin-top: 5px;
       color: $green;
@@ -301,7 +349,7 @@ body {
       margin-inline: auto;
       display: none;
       position: relative;
-      z-index: 1;
+      z-index: 3;
     }
 
     button {
@@ -326,7 +374,7 @@ body {
 
   }
 
-  .restaurants__card__gorbeia {
+  &__card__gorbeia {
     width: 330px;
     height: 450px;
     margin-inline: auto;
@@ -334,6 +382,30 @@ body {
     box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.145);
     margin-top: 40px;
 
+    &__city {
+      position: absolute;
+      z-index: 2;
+      margin-top: 5px;
+      margin-left: 5px;
+      color: $green;
+      font-size: 20px;
+    }
+
+    &__services {
+      display: none;
+      background: white;
+      grid-template-columns: 83px 83px 83px 81px;
+      grid-template-rows: 84px 84px 91px;
+      position: absolute;
+      z-index: 2;
+      
+
+      img {
+        width: 100%;
+        
+      }
+    }
+
     .restaurants__card__paragraph {
       margin-top: 5px;
       color: $green;
@@ -355,7 +427,7 @@ body {
       margin-inline: auto;
       display: none;
       position: relative;
-      z-index: 1;
+      z-index: 3;
     }
 
     button {
@@ -381,14 +453,14 @@ body {
   }
 
 
-  h2 {
-    margin-left: 15px;
-    max-width: $max-width;
-    margin-inline: auto;
-    padding-left: 10px;
-    font-size: 1.6rem;
-    color: $green;
-  }
+  // h2 {
+  //   margin-left: 15px;
+  //   max-width: 400px;
+  //   margin-inline: auto;
+  //   padding-left: 10px;
+  //   font-size: 1.6rem;
+  //   color: $green;
+  // }
 
 
 
@@ -397,18 +469,17 @@ body {
     width: 100%;
     display: grid;
     justify-content: center;
-    grid-template-columns: 83px 83px 83px 81px;
+    grid-template-columns: 81px 83px 83px 83px;
     grid-template-rows: 83px 83px 83px 60px;
     row-gap: 5px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 
     picture {
       grid-row-start: 1;
       grid-row-end: 4;
       grid-column-start: 1;
       grid-column-end: 5;
-      // box-shadow: rgba(0, 0, 0, 0.093) 0px 3px 6px, rgba(0, 0, 0, 0.11) 0px 3px 6px;
 
       img {
         object-fit: cover;
@@ -422,7 +493,7 @@ body {
       width: 100%;
       height: 100%;
       grid-row-start: 4;
-      opacity: 93%;
+      opacity: 96%;
     }
   }
 
@@ -430,18 +501,18 @@ body {
     width: 100%;
     display: grid;
     justify-content: center;
-    grid-template-columns: 83px 83px 83px 81px;
+    grid-template-columns: 81px 83px 83px 83px;
     grid-template-rows: 83px 83px 83px 60px;
     row-gap: 5px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 
     picture {
       grid-row-start: 1;
       grid-row-end: 4;
       grid-column-start: 1;
       grid-column-end: 5;
-      // box-shadow: rgba(0, 0, 0, 0.093) 0px 3px 6px, rgba(0, 0, 0, 0.11) 0px 3px 6px;
+      
 
       img {
         object-fit: cover;
@@ -455,7 +526,7 @@ body {
       width: 100%;
       height: 100%;
       grid-row-start: 4;
-      opacity: 93%;
+      opacity: 96%;
     }
   }
 
@@ -463,19 +534,18 @@ body {
     width: 100%;
     display: grid;
     justify-content: center;
-    grid-template-columns: 83px 83px 83px 81px;
+    grid-template-columns: 81px 83px 83px 81px;
     grid-template-rows: 83px 83px 83px 60px;
     row-gap: 5px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 
     picture {
       grid-row-start: 1;
       grid-row-end: 4;
       grid-column-start: 1;
       grid-column-end: 5;
-      // box-shadow: rgba(0, 0, 0, 0.093) 0px 3px 6px, rgba(0, 0, 0, 0.11) 0px 3px 6px;
-
+    
       img {
         object-fit: cover;
         width: 100%;
@@ -488,9 +558,11 @@ body {
       width: 100%;
       height: 100%;
       grid-row-start: 4;
-      opacity: 93%;
+      opacity: 96%;
     }
   }
+
+
 }
 
 
@@ -556,8 +628,20 @@ body {
     z-index: -1;
    
     svg {
-      max-width: $max-width;
+      max-width: 768px;
       min-width: $min-width;
     }
   }
+}
+
+.magnify_gamarra {
+  cursor: pointer;
+}
+
+.magnify_armentia {
+  cursor: pointer;
+}
+
+.magnify_gorbeia {
+  cursor: pointer;
 }

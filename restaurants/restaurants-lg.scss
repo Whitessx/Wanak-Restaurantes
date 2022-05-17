@@ -1,0 +1,65 @@
+// Color Variables
+$yellow: #ffb81c;
+$green: #1d5030;
+
+//Min and Max width Variables
+$min-width: 300px;
+$max-width: 750px;
+
+.restaurants {
+
+  &__grid--desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 330px);
+    grid-template-rows: 490px;
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  &__card__gamarra {
+    margin-top: 20px;
+    width: 330px;
+    height: 450px;
+  }
+
+  &__card__armentia {
+    width: 330px;
+    height: 450px;
+    margin-top: 20px;
+  }
+
+  &__card__gorbeia {
+    width: 330px;
+    height: 450px;
+    margin-top: 20px;
+  }
+
+  &__card__grid--gamarra {
+    grid-template-columns: 83px 83px 83px 83px;
+    grid-template-rows: 83px 83px 83px 60px;
+  }
+
+  button {
+    width: 330px;
+  }
+
+  iframe {
+    width: 330px;
+    height: 324px;
+  }
+
+  &__card__grid--armentia {
+    grid-template-columns: 83px 83px 83px 83px;
+    grid-template-rows: 83px 83px 83px 60px;
+  }
+
+  &__card__grid--gorbeia {
+    grid-template-columns: 83px 83px 83px 83px;
+    grid-template-rows: 83px 83px 83px 60px;
+  }
+
+  h2 {
+    max-width: 750px;
+  }
+}
+

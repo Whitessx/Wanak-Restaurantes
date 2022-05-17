@@ -46,6 +46,9 @@ HIDE_RESTAURANT.addEventListener("click", function() {
   ARMENTIA_GRID.style.display = "grid";
   MAPA3.style.display = "none";
   GORBEIA_GRID.style.display = "grid";
+  SERVICES.style.display = "none";
+  SERVICES_ARMENTIA.style.display = "none";
+  SERVICES_GORBEIA.style.display = "none";
 });
 
 const BOTON_MAPA2 = document.querySelector("#map_btn2");
@@ -81,5 +84,51 @@ BOTON_MAPA3.addEventListener("click", function() {
     MAPA3.style.display = "none";
     GORBEIA_GRID.style.display = "grid";
     HIDE_RESTAURANT.style.display = "none";
+  }
+});
+
+
+const MAGNIFY = document.querySelector(".magnify_gamarra");
+const SERVICES = document.querySelector(".restaurants__card__gamarra__services");
+
+SERVICES.style.display = "none";
+
+MAGNIFY.addEventListener("click", () => {
+  if (SERVICES.style.display == "none") {
+    SERVICES.style.display = "grid";
+    HIDE_RESTAURANT.style.display = "block";
+  } else if (SERVICES.style.display == "grid") {
+    SERVICES.style.display = "none";
+    HIDE.style.display = "none";
+  }
+});
+
+const MAGNIFY2 = document.querySelector(".magnify_armentia");
+const SERVICES_ARMENTIA = document.querySelector(".restaurants__card__armentia__services");
+
+SERVICES_ARMENTIA.style.display = "none";
+
+MAGNIFY2.addEventListener("click", () => {
+  if (SERVICES_ARMENTIA.style.display == "none") {
+    SERVICES_ARMENTIA.style.display = "grid";
+    HIDE_RESTAURANT.style.display = "block";
+  } else if (SERVICES_ARMENTIA.style.display == "grid") {
+    SERVICES_ARMENTIA.style.display = "none";
+    HIDE.style.display = "none";
+  }
+});
+
+const MAGNIFY3 = document.querySelector(".magnify_gorbeia");
+const SERVICES_GORBEIA = document.querySelector(".restaurants__card__gorbeia__services");
+
+SERVICES_GORBEIA.style.display = "none";
+
+MAGNIFY3.addEventListener("click", () => {
+  if (SERVICES_GORBEIA.style.display == "none") {
+    SERVICES_GORBEIA.style.display = "grid";
+    HIDE_RESTAURANT.style.display = "block";
+  } else if (SERVICES_GORBEIA.style.display == "grid") {
+    SERVICES_GORBEIA.style.display = "none";
+    HIDE.style.display = "none";
   }
 });

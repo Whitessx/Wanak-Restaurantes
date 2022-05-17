@@ -1,0 +1,230 @@
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: "Speedee";
+  src: url(../fonts/Speedee/Speedee_Rg.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Speedee Bold";
+  src: url(../fonts/Speedee/Speedee_Bd.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Speedee Light";
+  src: url(../fonts/Speedee/Speedee_Lt.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Speedee Italic";
+  src: url(../fonts/Speedee/Speedee_It.ttf) format("truetype");
+}
+
+:root {
+  font-size: clamp(1rem, calc(1rem + ((1vw - 0.234375rem) * 0.5178)), 1.1rem);
+  min-height: 0vw;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Speedee", Arial, Helvetica, sans-serif;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  -webkit-box-shadow: 0px 3px 13px -3px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 3px 13px -3px rgba(0, 0, 0, 0.18);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 4;
+}
+
+.navbar__container {
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  max-width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.navbar__container__button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.navbar__logo img {
+  height: 40px;
+  padding-left: 10px;
+}
+
+.navbar__menu--desktop {
+  display: none;
+}
+
+.navbar__menu--desktop a {
+  margin-inline: 10px;
+}
+
+.navbar__menu--desktop a svg {
+  color: #1d5030;
+}
+
+.navbar__menu--mobile {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  -webkit-box-shadow: 0px 10px 15px -8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 15px -8px rgba(0, 0, 0, 0.15);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 60px;
+  height: 300px;
+  display: none;
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  color: #1d5030;
+}
+
+.navbar__menu--mobile a {
+  font-size: 1.6rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .hamburger {
+  margin-right: 15px;
+}
+
+.transparent {
+  position: fixed;
+  z-index: 3;
+  height: 100vh;
+  width: 100vw;
+  background-color: #151515;
+  opacity: 60%;
+  display: none;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body .svg {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -1;
+}
+
+body .svg svg {
+  max-width: 750px;
+  min-width: 300px;
+}
+
+.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 220px;
+}
+
+.introduction h1 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.introduction img {
+  height: 150px;
+}
+/*# sourceMappingURL=employees.css.map */

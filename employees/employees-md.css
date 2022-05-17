@@ -1,0 +1,44 @@
+.navbar {
+  height: 70px;
+}
+
+.navbar__container {
+  max-width: 950px;
+}
+
+.navbar__container__button {
+  display: none;
+}
+
+.navbar__menu--desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.navbar__menu--desktop a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  color: #1d5030;
+  margin-inline: 10px;
+  font-size: 15px;
+}
+
+.navbar__logo img {
+  height: 50px;
+}
+/*# sourceMappingURL=employees-md.css.map */

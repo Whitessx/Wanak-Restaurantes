@@ -18,10 +18,24 @@
   height: 450px;
 }
 
+.restaurants__card__gamarra__services {
+  -ms-grid-columns: 83px 83px 83px 81px;
+      grid-template-columns: 83px 83px 83px 81px;
+  -ms-grid-rows: 84px 84px 91px;
+      grid-template-rows: 84px 84px 91px;
+}
+
 .restaurants__card__armentia {
   width: 330px;
   height: 450px;
   margin-top: 20px;
+}
+
+.restaurants__card__armentia__services {
+  -ms-grid-columns: 83px 83px 83px 81px;
+      grid-template-columns: 83px 83px 83px 81px;
+  -ms-grid-rows: 84px 84px 91px;
+      grid-template-rows: 84px 84px 91px;
 }
 
 .restaurants__card__gorbeia {
@@ -30,9 +44,16 @@
   margin-top: 20px;
 }
 
+.restaurants__card__gorbeia__services {
+  -ms-grid-columns: 83px 83px 83px 81px;
+      grid-template-columns: 83px 83px 83px 81px;
+  -ms-grid-rows: 84px 84px 91px;
+      grid-template-rows: 84px 84px 91px;
+}
+
 .restaurants__card__grid--gamarra {
-  -ms-grid-columns: 83px 83px 83px 83px;
-      grid-template-columns: 83px 83px 83px 83px;
+  -ms-grid-columns: 82px 83px 83px 82px;
+      grid-template-columns: 82px 83px 83px 82px;
   -ms-grid-rows: 83px 83px 83px 60px;
       grid-template-rows: 83px 83px 83px 60px;
 }
@@ -47,15 +68,15 @@
 }
 
 .restaurants__card__grid--armentia {
-  -ms-grid-columns: 83px 83px 83px 83px;
-      grid-template-columns: 83px 83px 83px 83px;
+  -ms-grid-columns: 82px 83px 83px 82px;
+      grid-template-columns: 82px 83px 83px 82px;
   -ms-grid-rows: 83px 83px 83px 60px;
       grid-template-rows: 83px 83px 83px 60px;
 }
 
 .restaurants__card__grid--gorbeia {
-  -ms-grid-columns: 83px 83px 83px 83px;
-      grid-template-columns: 83px 83px 83px 83px;
+  -ms-grid-columns: 82px 83px 83px 82px;
+      grid-template-columns: 82px 83px 83px 82px;
   -ms-grid-rows: 83px 83px 83px 60px;
       grid-template-rows: 83px 83px 83px 60px;
 }

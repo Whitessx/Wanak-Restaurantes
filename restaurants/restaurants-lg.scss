@@ -20,22 +20,37 @@ $max-width: 750px;
     margin-top: 20px;
     width: 330px;
     height: 450px;
+
+    &__services {
+      grid-template-columns: 83px 83px 83px 81px;
+      grid-template-rows: 84px 84px 91px;
+    }
   }
 
   &__card__armentia {
     width: 330px;
     height: 450px;
     margin-top: 20px;
+    
+    &__services {
+      grid-template-columns: 83px 83px 83px 81px;
+      grid-template-rows: 84px 84px 91px;
+    }
   }
 
   &__card__gorbeia {
     width: 330px;
     height: 450px;
     margin-top: 20px;
+
+    &__services {
+      grid-template-columns: 83px 83px 83px 81px;
+      grid-template-rows: 84px 84px 91px;
+    }
   }
 
   &__card__grid--gamarra {
-    grid-template-columns: 83px 83px 83px 83px;
+    grid-template-columns: 82px 83px 83px 82px;
     grid-template-rows: 83px 83px 83px 60px;
   }
 
@@ -49,12 +64,12 @@ $max-width: 750px;
   }
 
   &__card__grid--armentia {
-    grid-template-columns: 83px 83px 83px 83px;
+    grid-template-columns: 82px 83px 83px 82px;
     grid-template-rows: 83px 83px 83px 60px;
   }
 
   &__card__grid--gorbeia {
-    grid-template-columns: 83px 83px 83px 83px;
+    grid-template-columns: 82px 83px 83px 82px;
     grid-template-rows: 83px 83px 83px 60px;
   }
 

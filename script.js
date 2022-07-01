@@ -6,6 +6,18 @@ const BOTON = document.getElementById("btn-hamburger");
 const MENU = document.querySelector(".navbar__menu--mobile");
 const HIDE = document.querySelector(".transparent");
 
+MENU.style.display = "none";
+
+BOTON.addEventListener("click", function() {
+  if (MENU.style.display == "none") {
+    MENU.style.display = "flex";
+    HIDE.style.display = "block";
+  } else if (MENU.style.display != "none") {
+    MENU.style.display = "none";
+    HIDE.style.display = "none";
+  }
+});
+
 const BOTON_MAPA = document.querySelector("#map_btn");
 const MAPA = document.querySelector(".iframe_gamarra");
 const GAMARRA_GRID = document.querySelector(".restaurants__card__grid--gamarra");
@@ -44,17 +56,6 @@ SERVICES_ARMENTIA.style.display = "none";
 SERVICES_GORBEIA.style.display = "none";
 SERVICES_LOGRONO.style.display = "none";
 
-MENU.style.display = "none";
-
-BOTON.addEventListener("click", function() {
-  if (MENU.style.display == "none") {
-    MENU.style.display = "flex";
-    HIDE.style.display = "block";
-  } else if (MENU.style.display != "none") {
-    MENU.style.display = "none";
-    HIDE.style.display = "none";
-  }
-});
 
 HIDE.addEventListener("click", function() {
     MENU.style.display = "none";

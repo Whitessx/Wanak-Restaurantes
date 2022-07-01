@@ -459,6 +459,87 @@ body .top_svg svg {
   margin-right: 10px;
 }
 
+.restaurants__card__logrono {
+  width: 330px;
+  height: 450px;
+  margin-inline: auto;
+  -webkit-box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.133);
+  box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.145);
+  margin-top: 20px;
+}
+
+.restaurants__card__logrono__city {
+  position: absolute;
+  z-index: 2;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #ffb81c;
+  font-size: 20px;
+}
+
+.restaurants__card__logrono__services {
+  display: none;
+  background: white;
+  -ms-grid-columns: 83px 83px 83px 81px;
+      grid-template-columns: 83px 83px 83px 81px;
+  -ms-grid-rows: 84px 84px 91px;
+      grid-template-rows: 84px 84px 91px;
+  position: absolute;
+  z-index: 2;
+}
+
+.restaurants__card__logrono__services img {
+  width: 100%;
+}
+
+.restaurants__card__logrono .restaurants__card__paragraph {
+  margin-top: 5px;
+  color: #1d5030;
+}
+
+.restaurants__card__logrono p {
+  max-width: 750px;
+  font-size: 1.1rem;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  height: 30px;
+  opacity: 90%;
+}
+
+.restaurants__card__logrono iframe {
+  display: block;
+  margin-inline: auto;
+  display: none;
+  position: relative;
+  z-index: 3;
+}
+
+.restaurants__card__logrono button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.9rem;
+  color: #00000099;
+  border: none;
+  cursor: pointer;
+  height: 80px;
+  width: 330px;
+  background-color: #ffb71cc5;
+  margin-top: 11px;
+}
+
+.restaurants__card__logrono button img {
+  height: 43px;
+  margin-right: 10px;
+}
+
 .restaurants__card__grid--gamarra {
   width: 100%;
   display: -ms-grid;
@@ -585,6 +666,48 @@ body .top_svg svg {
   opacity: 96%;
 }
 
+.restaurants__card__grid--logrono {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 81px 83px 83px 81px;
+      grid-template-columns: 81px 83px 83px 81px;
+  -ms-grid-rows: 83px 83px 83px 60px;
+      grid-template-rows: 83px 83px 83px 60px;
+  row-gap: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.restaurants__card__grid--logrono picture {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.restaurants__card__grid--logrono picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.restaurants__card__grid--logrono img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  opacity: 96%;
+}
+
 .introduction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -675,6 +798,10 @@ body .svg svg {
 }
 
 .magnify_gorbeia {
+  cursor: pointer;
+}
+
+.magnify_logrono {
   cursor: pointer;
 }
 /*# sourceMappingURL=restaurants.css.map */
